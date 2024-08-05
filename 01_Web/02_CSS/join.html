@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        label {
+            display: inline-block;
+            width: 120px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+    <body>
+        <form action="">
+            <fieldset>
+                <legend>회원가입</legend>
+                <label for="userId"> 사용자 ID </label>
+                <input type="text" id="userId" />
+                <br />
+                <label for="userPw"> 비밀번호 </label>
+                <input type="text" id="userPw" />
+                <br />
+                <label for="userPwChk"> 비밀번호 확인 </label>
+                <input type="text" id="userPwChk" />
+                <br />
+                <label for="name"> 이름 </label>
+                <input type="text" id="name" />
+                <br />
+                <label for="gender"> 성별 </label>
+                <input type="radio" name="gender" id="male" />
+                <label for="male" style="font-size: 15px; text-align: left; width: 30px">남</label>
+                <input type="radio" name="gender" id="female" />
+                <label for="female" style="font-size: 15px; text-align: left; width: 30px">여</label>
+                <br />
+                <label for=""> 취미 </label>
+                <input type="checkbox" id="soccer" />
+                <label for="soccer" style="font-size: 15px; text-align: left; width: 30px">축구</label>
+                <input type="checkbox" id="baseball" />
+                <label for="baseball" style="font-size: 15px; text-align: left; width: 30px">야구</label>
+                <input type="checkbox" id="volleyball" />
+                <label for="volleyball" style="font-size: 15px; text-align: left; width: 30px">배구</label>
+
+                <input type="checkbox" id="basketball" />
+                <label for="basketball" style="font-size: 15px; text-align: left; width: 30px">농구</label>
+                <br />
+                <label for="email"> email </label>
+                <input type="text" id="email" />
+                <br />
+                <label for="role"> 역할 </label>
+                <select name="" id="role">
+                    <option value="admin">ADMIN</option>
+                    <option value="ga">관리자</option>
+                    <option value="cus">일반회원</option>
+                </select>
+                <br />
+                <input type="submit" value="확인" />
+                <input type="reset" value="다시쓰기" />
+            </fieldset>
+        </form>
+    </body>
+</html>

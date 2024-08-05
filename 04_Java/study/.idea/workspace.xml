@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="31009aaf-9a30-45ae-a350-05e7aa8b5339" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2hzD33BSWtUTtljEYborE3gF8PO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AccuracyExample1.executor": "Run",
+    "Application.AccuracyExample2.executor": "Run",
+    "Application.App.executor": "Run",
+    "Application.App2.executor": "Run",
+    "Application.App3.executor": "Run",
+    "Application.AssginmentOperatorExample.executor": "Run",
+    "Application.CalculatorExample.executor": "Run",
+    "Application.CarExample.executor": "Run",
+    "Application.CompareLogicalOperator.executor": "Run",
+    "Application.CompareOperatorExample.executor": "Run",
+    "Application.ComputerExample.executor": "Run",
+    "Application.ConditionalOperationExample.executor": "Run",
+    "Application.EarthExample.executor": "Run",
+    "Application.EqualsExample.executor": "Run",
+    "Application.Hello.executor": "Run",
+    "Application.IfDiceExample.executor": "Run",
+    "Application.IfElseExample.executor": "Run",
+    "Application.IfElseIfElseExample.executor": "Run",
+    "Application.IfExample.executor": "Run",
+    "Application.IfNestedExample.executor": "Run",
+    "Application.IncreaseDecreaseOperatorExample.executor": "Run",
+    "Application.KeyControlExample.executor": "Run",
+    "Application.KoreanExample.executor": "Run",
+    "Application.LogicalOperatorExample.executor": "Run",
+    "Application.MultiplicationTableExample.executor": "Run",
+    "Application.NullPointerExceptionExample.executor": "Run",
+    "Application.OverflowUnderflowExample.executor": "Run",
+    "Application.PrimitiveAndStringConversionExample.executor": "Run",
+    "Application.PrintFrom1To10Example.executor": "Run",
+    "Application.Rect.executor": "Run",
+    "Application.ReferenceVariableCompareExample.executor": "Run",
+    "Application.ScannerExample.executor": "Run",
+    "Application.SumFrom1To100Example.executor": "Run",
+    "Application.SupersonicAirplaneExample.executor": "Run",
+    "Application.SwitchCharExample.executor": "Run",
+    "Application.SwitchNoBreakCaseExample.executor": "Run",
+    "Application.SwtichExample.executor": "Run",
+    "Application.VariableInitializationExample.executor": "Run",
+    "Application.Verify.executor": "Run",
+    "Application.ch06.sec07.exam01.CarExample.executor": "Run",
+    "Application.ch06.sec07.exam04.CarExample.executor": "Run",
+    "Application.ch06.sec07.exam05.CarExample.executor": "Run",
+    "Application.exam01.executor": "Run",
+    "Application.exam02.executor": "Run",
+    "Application.exam03.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/KB_Fullstack/04_Java/study/KB_JAVA",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/KB_Fullstack/04_Java/study/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\KB_Fullstack\04_Java\study\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ch08.sec01.exam01" />
+      <recent name="ch03.sec04" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.EqualsExample">
+    <configuration name="ComputerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch07.sec04.exam01.ComputerExample" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch07.sec04.exam01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EqualsExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch05.sec05.EqualsExample" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch05.sec05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NullPointerExceptionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch05.sec04.NullPointerExceptionExample" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch05.sec04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReferenceVariableCompareExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch05.sec03.ReferenceVariableCompareExample" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch05.sec03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupersonicAirplaneExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch07.sec04.exam02.SupersonicAirplaneExample" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch07.sec04.exam02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EqualsExample" />
+        <item itemvalue="Application.NullPointerExceptionExample" />
+        <item itemvalue="Application.ReferenceVariableCompareExample" />
+        <item itemvalue="Application.SupersonicAirplaneExample" />
+        <item itemvalue="Application.ComputerExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31009aaf-9a30-45ae-a350-05e7aa8b5339" name="Changes" comment="" />
+      <created>1718587811642</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718587811642</updated>
+      <workItem from="1718587812597" duration="456000" />
+      <workItem from="1718588285688" duration="5342000" />
+      <workItem from="1718669016963" duration="19541000" />
+      <workItem from="1718763448975" duration="13065000" />
+      <workItem from="1718845086049" duration="15865000" />
+      <workItem from="1718928166328" duration="19131000" />
+      <workItem from="1719014516471" duration="1676000" />
+      <workItem from="1719029473232" duration="1375000" />
+      <workItem from="1719041637183" duration="1281000" />
+      <workItem from="1719284015533" duration="274000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
