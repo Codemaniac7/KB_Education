@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e351468e-58c3-45dd-9f8d-7e49674a741e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../SpringLegacy/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringLegacy/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringLegacy/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringLegacy/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringLegacy/src/main/webapp/WEB-INF/views/custom404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringLegacy/src/main/webapp/WEB-INF/views/error_page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/dynamicweb/exception/CommonExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/src/main/webapp/WEB-INF/views/custom404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/src/main/webapp/WEB-INF/views/error_page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/src/main/webapp/WEB-INF/views/sample/exUpload.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_1/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_1/src/main/webapp/WEB-INF/views/error_page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03_1/src/main/webapp/WEB-INF/views/sample/ex04.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/src/main/java/org/scoula/mapper/TimeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/src/main/resources/org/scoula/mapper/TimeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/src/test/java/org/scoula/config/RootConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/src/test/java/org/scoula/mapper/TimeMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/src/test/java/org/scoula/persistence/JDBCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04/src/test/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_2/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_2/src/test/java/org/scoula/config/RootConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex04_2/src/test/java/org/scoula/persistence/JDBCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_MySQL/test" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/dynamicweb/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/dynamicweb/config/ServletConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/dynamicweb/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/dynamicweb/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/dynamicweb/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/dynamicweb/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/dynamicweb/controller/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/dynamicweb/controller/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/dynamicweb/dto/SampleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/dynamicweb/dto/SampleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_1/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_1/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_1/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_1/src/main/java/org/scoula/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_1/src/main/java/org/scoula/ex03/controller/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_1/src/main/java/org/scoula/ex03/controller/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex03_1/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ex03_1/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ex04" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="2dg1o4ix4nvjr">
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/scoula/exception/CommonExceptionAdvice.java">
+          <provider editor-type-id="text-editor" selected="true" />
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="-11" />
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/scoula/config/ServletConfig.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="607">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/scoula/config/WebConfig.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="462">
+              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2kGYZ2hdes0qADb5XGXu5WcB0C1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.JDBCTest.executor": "Run",
+    "Gradle.JDBCTest.testConnection.executor": "Run",
+    "Gradle.RootConfigTest.dataSource.executor": "Run",
+    "Gradle.RootConfigTest.executor": "Run",
+    "Gradle.TimeMapperTest.executor": "Run",
+    "Gradle.TimeMapperTest.getTime.executor": "Run",
+    "Gradle.TimeMapperTest.getTime2.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/KB_Fullstack/08_Spring/template/MyBatisSpringLegacy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\KB_Fullstack\08_Spring\ex04\src\test\resources" />
+      <recent name="C:\KB_Fullstack\08_Spring\ex04\src\main\webapp\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\KB_Fullstack\08_Spring\ex04\src\main\resources" />
+      <recent name="C:\KB_Fullstack\08_Spring\ex04\src\main\resources\mybaits" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.scoula.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.TimeMapperTest.getTime2">
+    <configuration name="RootConfigTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.scoula.config.RootConfigTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RootConfigTest.dataSource" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.scoula.config.RootConfigTest.dataSource&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TimeMapperTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.scoula.mapper.TimeMapperTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TimeMapperTest.getTime" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.scoula.mapper.TimeMapperTest.getTime&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TimeMapperTest.getTime2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.scoula.mapper.TimeMapperTest.getTime2&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.TimeMapperTest.getTime2" />
+        <item itemvalue="Gradle.TimeMapperTest" />
+        <item itemvalue="Gradle.TimeMapperTest.getTime" />
+        <item itemvalue="Gradle.RootConfigTest" />
+        <item itemvalue="Gradle.RootConfigTest.dataSource" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e351468e-58c3-45dd-9f8d-7e49674a741e" name="Changes" comment="" />
+      <created>1722911437255</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722911437255</updated>
+      <workItem from="1722911438269" duration="4616000" />
+      <workItem from="1722920200616" duration="57000" />
+      <workItem from="1722922630329" duration="1365000" />
+      <workItem from="1722926430972" duration="2079000" />
+      <workItem from="1722990026289" duration="4452000" />
+      <workItem from="1722994670912" duration="136000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
