@@ -9,7 +9,9 @@ import org.scoula.config.RootConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.transaction.annotation.Transactional;
 
+//@Transactional
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes={RootConfig.class})
 @Log4j
@@ -38,12 +40,32 @@ public class BoardMapperTest {
     @DisplayName("BoardMapper의 새 글 작성")
     public void create() {
         BoardVO board = new BoardVO();
-        board.setTitle("새로 작성하는 글");
-        board.setContent("새로 작성하는 내용");
+        board.setTitle("새로 작성하는 글xxx");
+        board.setContent("새로 작성하는 내용xxx");
         board.setWriter("user0");
 
         mapper.create(board);
 
         log.info(board);
+    }
+
+    @Test
+    @DisplayName("BoardMapper의 글 수정")
+    public void update() {
+        BoardVO board = new BoardVO();
+        board.setNo(1L);
+        board.setTitle("수정된 제목");
+        board.setContent("수정된 내용");
+        board.setWriter("user00");
+
+        int count  = mapper.update(board);
+
+        log.info("UPDATE COUNT: " + count);
+    }
+
+    @Test
+    @DisplayName("BoardMapper의 글 삭제")
+    public void delete() {
+        log.info("DELETE COUNT: " + mapper.delete(3L));
     }
 }

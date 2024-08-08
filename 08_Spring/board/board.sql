@@ -17,4 +17,4 @@ VALUES ('테스트 제목1', '테스트 내용1', 'user00'),
        ('테스트 제목4', '테스트 내용4', 'user00'),
        ('테스트 제목5', '테스트 내용5', 'user00');
 
-SELECT * FROM TBL_BOARD;
+SELECT * FROM TBL_BOARD ORDER BY NO DESC;
