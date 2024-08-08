@@ -3,11 +3,15 @@ package org.scoula.ex03.controller;
 
 import lombok.extern.log4j.Log4j;
 import org.scoula.dto.SampleDTO;
+import org.scoula.dto.TodoDTO;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 @Controller
 @RequestMapping("/sample")
@@ -38,9 +42,28 @@ public class SampleController {
     @GetMapping("/ex02")
     public String ex02(@RequestParam("name") String name,
                        @RequestParam("age") int age){
-        log.info("name" +name);
-        log.info("age" +age);
-
+        log.info("name " +name);
+        log.info("age " +age);
         return "ex02";
+    }
+
+//    @GetMapping("/ex02List")
+//    public String ex02List(@RequestParam("ids") ArrayList<String> ids) {
+//        log.info("ids " + ids );
+//
+//        return "ex02List";
+//    }
+
+    @GetMapping("/ex02List")
+    public String ex02List(@RequestParam("ids") String[] ids) {
+        log.info("array ids " + Arrays.toString(ids) );
+
+        return "ex02List";
+    }
+
+    @GetMapping("/ex03")
+    public String ex03(TodoDTO todo) {
+        log.info("todo:"+ todo);
+        return "ex03";
     }
 }
