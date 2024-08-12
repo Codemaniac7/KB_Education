@@ -44,4 +44,42 @@ public class BoardControllerTest {
                         .getModelMap()
         );
     }
+
+    @Test
+    public void get() throws Exception {
+        log.info(
+                mockMvc.perform(MockMvcRequestBuilders.get("/board/update").param("no", "1"))
+                        .andReturn()
+                        .getModelAndView()
+                        .getModelMap()
+        );
+    }
+
+    @Test
+    public void update() throws Exception {
+        String resultPage = mockMvc.perform(
+                MockMvcRequestBuilders.post("/board/update")
+                        .param("no", "1")
+                        .param("title","수정된 테스트 새글 제목")
+                        .param("content", "수정된 테스트 새글 내용")
+                        .param("writer", "user00"))
+                        .andReturn()
+                        .getModelAndView()
+                        .getViewName();
+
+                log.info(resultPage);
+    }
+
+    @Test
+    public void delete() throws Exception {
+        String resultPage = mockMvc.perform(
+                MockMvcRequestBuilders
+                        .post("/board/delete")
+                        .param("no","4")
+        )
+                .andReturn()
+                .getModelAndView()
+                .getViewName();
+        log.info(resultPage);
+    }
 }
