@@ -6,4 +6,8 @@
     <settings>
         <setting name="mapUnderscoreToCamelCase" value="true"></setting>
     </settings>
+
+    <typeAliases>
+        <package name="org.scoula.board.domain"></package>
+    </typeAliases>
 </configuration>

@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS tbl_board2;
+DROP TABLE IF EXISTS tbl_board;
 
-CREATE TABLE tbl_board
+CREATE TABLE tbl_board2
 (
     no INTEGER AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(200) NOT NULL,
@@ -9,11 +9,11 @@ CREATE TABLE tbl_board
     reg_date DATETIME DEFAULT CURRENT_TIMESTAMP,
     update_date DATETIME DEFAULT CURRENT_TIMESTAMP
 );
-INSERT INTO tbl_board(title, content, writer)
+INSERT INTO tbl_board2(title, content, writer)
 VALUES
     ('테스트 제목1', '테스트 내용1', 'user00'),
     ('테스트 제목2', '테스트 내용2', 'user00'),
     ('테스트 제목3', '테스트 내용3', 'user00'),
     ('테스트 제목4', '테스트 내용4', 'user00'),
     ('테스트 제목5', '테스트 내용5', 'user00');
-SELECT * FROM tbl_board;
+SELECT * FROM tbl_board2;
