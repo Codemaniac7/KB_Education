@@ -58,10 +58,12 @@ public class BoardController {
     }
 
     @PostMapping("/delete")
-    public String delete(@RequestParam("no") Long no) {
-        log.info("delete: " + no);
-        service.delete(no);
-
+    public String delete(@RequestParam("no") Long no,
+                         RedirectAttributes ra) {
+        if (service.delete(no)) {
+            ra.addFlashAttribute("result", "success");
+        }
         return "redirect:/board/list";
+
     }
 }
