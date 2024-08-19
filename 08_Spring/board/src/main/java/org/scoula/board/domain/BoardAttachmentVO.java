@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.log4j.Log4j;
+import org.scoula.common.util.UploadFiles;
 import org.springframework.web.multipart.MultipartFile;
 import java.util.Date;
 
@@ -37,5 +38,9 @@ public class BoardAttachmentVO {
                 .size(part.getSize())
                 .regDate(new Date()) // 등록일은 현재 시간으로 설정
                 .build();
+    }
+
+    public String getFileSize() {
+        return UploadFiles.getFormatSize(size);
     }
 }

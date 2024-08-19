@@ -16,4 +16,4 @@ VALUES
     ('테스트 제목3', '테스트 내용3', 'user00'),
     ('테스트 제목4', '테스트 내용4', 'user00'),
     ('테스트 제목5', '테스트 내용5', 'user00');
-SELECT * FROM tbl_board2;
+SELECT * FROM tbl_board;

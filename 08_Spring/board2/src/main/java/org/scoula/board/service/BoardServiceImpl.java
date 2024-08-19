@@ -28,6 +28,14 @@ public class BoardServiceImpl implements BoardService{
                 .toList();
     }
 
+    @Override
+    public BoardDTO get(Long no) {
+        log.info("get........." + no);
+
+        BoardDTO board = BoardDTO.of(mapper.get(no));
+        return Optional.ofNullable(board)
+                .orElseThrow(NoSuchElementException::new);
+    }
 
     @Override
     public void create(BoardDTO board) {

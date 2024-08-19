@@ -6,17 +6,17 @@
 
     <select id="getList" resultType="BoardVO">
         <![CDATA[
-            select * from tbl_board2
+            select * from tbl_board
             order by no desc
         ]]>
     </select>
 
     <select id="get" resultType="BoardVO">
-        select * from tbl_board2 where no=#{no}
+        select * from tbl_board where no=#{no}
     </select>
 
     <insert id="create">
-        insert into tbl_board2 (title, content, writer)
+        insert into tbl_board (title, content, writer)
         values (#{title}, #{content}, #{writer})
 
         <selectKey resultType="Long" keyProperty="no" keyColumn="no" order="AFTER">
@@ -25,7 +25,7 @@
     </insert>
 
     <update id="update">
-        update tbl_board2 set
+        update tbl_board set
             title = #{title},
             content = #{content},
             writer= #{writer},
@@ -34,6 +34,6 @@
     </update>
 
     <delete id="delete">
-        delete from tbl_board2 where no = #{no}
+        delete from tbl_board where no = #{no}
     </delete>
 </mapper>

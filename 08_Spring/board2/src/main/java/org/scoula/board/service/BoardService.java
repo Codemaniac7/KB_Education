@@ -7,6 +7,8 @@ import java.util.List;
 public interface BoardService {
     public List<BoardDTO> getList();
 
+    public BoardDTO get(Long no);
+
     public void create(BoardDTO board);
 
     public boolean update(BoardDTO board);

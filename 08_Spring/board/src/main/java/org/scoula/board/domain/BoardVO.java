@@ -15,7 +15,6 @@ import java.util.List;
 @Builder
 public class BoardVO {
 
-    private List<BoardAttachmentVO> attaches;
 
     private Long no;
     private String title;
@@ -23,4 +22,7 @@ public class BoardVO {
     private String writer;
     private Date regDate;
     private Date updateDate;
+
+    private List<BoardAttachmentVO> attaches;
+
 }
