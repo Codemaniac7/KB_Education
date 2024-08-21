@@ -12,11 +12,12 @@
         <result property="email" column="email" />
         <result property="regDate" column="reg_date" />
         <result property="updateDate" column="update_date" />
+        <result property="mbti" column="mbti" />
         <collection property="authList" resultMap="authMap" />
     </resultMap>
 
     <select id="get" resultMap="memberMap">
-        select m.username, password, email, reg_date, update_date, auth
+        select m.username, password, email, reg_date, update_date, mbti, auth
         from
             tbl_member m left outer join tbl_member_auth a
                                          on m.username = a.username

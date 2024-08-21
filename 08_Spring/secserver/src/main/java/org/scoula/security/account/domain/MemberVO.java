@@ -18,5 +18,6 @@ public class MemberVO {
     private String email;
     private Date regDate;
     private Date updateDate;
+    private String mbti;
     private List<AuthVO> authList; // 권한 목록, join 처리 필요
 }
