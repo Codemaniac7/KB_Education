@@ -11,4 +11,6 @@ public interface MemberMapper {
     int insert(MemberVO member);
 
     int insertAuth(AuthVO auth);
+
+    int update(MemberVO member);
 }

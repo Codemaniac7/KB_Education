@@ -1,5 +1,7 @@
 package org.scoula.common;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
@@ -9,6 +11,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URLEncoder;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.DecimalFormat;
 
@@ -44,4 +47,29 @@ public class UploadFiles {
         }
     }
 
+    public static void downloadImage(HttpServletResponse response, File file) {
+        try {
+            Path path = Path.of(file.getPath());
+            String mimeType = Files.probeContentType(path);
+            response.setContentType(mimeType);
+            response.setContentLength((int) file.length());
+            try (OutputStream os = response.getOutputStream();
+                 BufferedOutputStream bos = new BufferedOutputStream(os)) {
+                Files.copy(path, bos);
+            }
+        }
+        catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @GetMapping("/{username}/avatar")
+    public void getAvatar(@PathVariable String username, HttpServletResponse response) {
+        String avatarPath = "c:/upload/avatar/" + username + ".png";
+        File file = new File(avatarPath);
+        if(!file.exists()) { // 아바타 등록이 없는 경우, 디폴트 아바타 이미지 사용
+            file = new File("C:/upload/avatar/unknown.png");
+        }
+        UploadFiles.downloadImage(response, file);
+    }
 }
