@@ -1,5 +1,5 @@
 import api from '@/api';
-import axios from 'axios';
+// import axios from 'axios';
 const BASE_URL = '/api/member';
 const headers = { 'Content-Type': 'multipart/form-data' };
 export default {
@@ -28,6 +28,8 @@ export default {
     },
 
     async update(member) {
+        const formData = new FormData();
+
         formData.append('username', member.username);
         formData.append('password', member.password);
         formData.append('email', member.email);
@@ -36,7 +38,13 @@ export default {
             formData.append('avatar', member.avatar);
         }
 
-        const { data } = await api.get(`${BASE_URL}/${member.username}`, formData, headers);
+        const { data } = await api.put(`${BASE_URL}/${member.username}`, formData, headers);
+        console.log('AUTH PUT: ', data);
+        return data;
+    },
+
+    async changePassword(formData) {
+        const { data } = await api.put(`${BASE_URL}/${formData.username}/changepassword`, formData);
         console.log('AUTH PUT: ', data);
         return data;
     },

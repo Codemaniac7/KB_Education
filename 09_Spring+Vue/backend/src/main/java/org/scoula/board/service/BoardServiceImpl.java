@@ -98,9 +98,16 @@ public class BoardServiceImpl implements BoardService {
 
     @Override
     public BoardDTO update(BoardDTO board) {
-        log.info("update......" + board);
+        log.info("update...... " + board);
+        BoardVO boardVO = board.toVo();
+        log.info("update...... " + boardVO);
         mapper.update
-                (board.toVo());
+                (boardVO);
+// 파일 업로드 처리
+        List<MultipartFile> files = board.getFiles();
+        if(files != null && !files.isEmpty()) {
+            upload(board.getNo(), files);
+        }
         return get(board.getNo());
     }
 
@@ -110,7 +117,6 @@ public class BoardServiceImpl implements BoardService {
         BoardDTO board = get(no);
         mapper.delete(no);
         return board;
-
     }
 
     // 첨부파일 한 개 얻기

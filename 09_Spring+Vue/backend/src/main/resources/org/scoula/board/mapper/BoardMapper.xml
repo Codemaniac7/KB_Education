@@ -41,16 +41,9 @@
 
     <select id="getList" resultType="BoardVO">
         <![CDATA[
-        SELECT *
-        FROM tbl_board
+        select * from tbl_board order by no desc
         ]]>
     </select>
-
-    <!--    <select id="get" resultType="BoardVO">-->
-    <!--        select *-->
-    <!--        from tbl_board-->
-    <!--        where no = #{no}-->
-    <!--    </select>-->
 
     <select id="get" resultMap="boardMap">
         select b.*,

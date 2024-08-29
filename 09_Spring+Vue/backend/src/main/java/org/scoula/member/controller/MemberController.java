@@ -8,6 +8,7 @@ import org.scoula.member.dto.MemberDTO;
 import org.scoula.member.dto.MemberJoinDTO;
 import org.scoula.member.dto.MemberUpdateDTO;
 import org.scoula.member.service.MemberService;
+import org.scoula.security.account.dto.ChangePasswordDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -45,5 +46,11 @@ public class MemberController {
     @PutMapping("/{username}")
     public ResponseEntity<MemberDTO> changeProfile(MemberUpdateDTO member) {
         return ResponseEntity.ok(service.update(member));
+    }
+
+    @PutMapping("/{username}/changepassword")
+    public ResponseEntity<?> changePassword(@RequestBody ChangePasswordDTO changePasswordDTO) {
+        service.changePassword(changePasswordDTO);
+        return ResponseEntity.ok().build();
     }
 }

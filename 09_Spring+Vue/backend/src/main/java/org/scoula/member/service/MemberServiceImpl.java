@@ -10,6 +10,7 @@ import org.scoula.member.exception.PasswordMissMatchException;
 import org.scoula.member.mapper.MemberMapper;
 import org.scoula.security.account.domain.AuthVO;
 import org.scoula.security.account.domain.MemberVO;
+import org.scoula.security.account.dto.ChangePasswordDTO;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -75,5 +76,15 @@ public class MemberServiceImpl implements MemberService{
         mapper.update(member.toVO());
         saveAvatar(member.getAvatar(), member.getUsername());
         return get(member.getUsername());
+    }
+
+    @Override
+    public void changePassword(ChangePasswordDTO changePassword) {
+        MemberVO member = mapper.get(changePassword.getUsername());
+        if(!passwordEncoder.matches(changePassword.getOldPassword(), member.getPassword())) {
+            throw new PasswordMissMatchException();
+        }
+        changePassword.setNewPassword(passwordEncoder.encode(changePassword.getNewPassword()));
+        mapper.updatePassword(changePassword);
     }
 }
