@@ -21,8 +21,8 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class BoardServiceImpl implements BoardService {
 
-    private final static String BASE_DIR = "c:/upload/board";
 
+    private final static String BASE_DIR = "c:/upload/board";
 
     //    @Autowired
     final private BoardMapper mapper;

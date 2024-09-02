@@ -1,64 +1,53 @@
 <script setup>
-import { ref, reactive } from 'vue';
-
-const refPrimitive = ref('ref를 화면에 뿌릴 때(primitive) StringPrimitive');
-const refObject = ref({ 'name': '정승민', '음식': '김치찌개', '운동': '테니스' });
-const reactiveObject = reactive({
-    'name': '정승민',
-    '음식': '김치찌개',
-    '운동': '테니스'
-});
-
-
-// function changeRefPrimitive() {
-//     refPrimitive.value = 'changedStringPrimitive';
-//     console.log(refPrimitive);
-// }
-// function changeRefObjectValue() {
-//     refObject.value.name = '장춘식';
-//     console.log(refObject);
-// }
-// function changeReactiveObjectKey() {
-//     reactiveObject.name = '장춘식';
-//     console.log(reactiveObject);
-// }
-
-
+import api from '@/api/boardApi';
+import { ref, reactive, computed } from 'vue';
+import moment from 'moment';
+import { useRoute, useRouter } from 'vue-router';
+const cr = useRoute();
+const router = useRouter();
+const page = ref({});
+const articles = computed(() => page.value);
+const load = async () => {
+    try {
+        page.value = await api.getList();
+        console.log(page.value);
+    } catch (error) {
+        console.error('Failed to load data:', error);
+    }
+};
+load();
 </script>
+
 <template>
-    <h1 style="margin-bottom: 30px">게시판 페이지</h1>
     <div>
-        {{ refPrimitive }}
-        <input type="button" value="변경" @click="changeRefPrimitive"></input>
-    </div>
-    <div>
-        <p>ref를 화면에 뿌릴 때(Object): {{ refObject.name }}</p>
-        <input type="button" value="변경" @click="changeRefObjectValue"></input>
-    </div>
-    <div>
-        <p>reactive를 화면에 뿌릴 때(primitive): {{ reactiveObject.name }}</p>
-        <input type="button" value="변경" @click="changeReactiveObjectKey"></input>
+        <h1 class="mb-3"><i class="fa-solid fa-paste"></i> 게시글 목록</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="width: 60px">No</th>
+                    <th>제목</th>
+                    <th style="width: 100px">작성자</th>
+                    <th style="width: 120px">작성일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="article in articles" :key="article.no">
+                    <td>{{ article.no }}</td>
+                    <td>
+                        <router-link :to="{ name: 'board/detail', params: { no: article.no } }">
+                            {{ article.title }}
+                        </router-link>
+                    </td>
+                    <td>{{ article.writer }}</td>
+                    <td>{{ moment(article.regDate).format('YYYY-MM-DD') }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="my-5 d-flex">
+            <div class="flex-grow-1 text-center">페이지 네이션</div>
+            <div>
+                <router-link :to="{ name: 'board/create' }" class="btn btn-primary"> <i class="fa-solid fa-pen-to-square"></i> 글 작성</router-link>
+            </div>
+        </div>
     </div>
 </template>
-
-<style>
-div>p {
-    display: inline-block;
-}
-
-input {
-    outline: none;
-    border: none;
-    width: 200px;
-    margin-bottom: 10px;
-}
-
-input[type='button'] {
-    background-color: #4caf50;
-    width: 50px;
-    margin-left: 20px;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-</style>

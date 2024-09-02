@@ -1,4 +1,3 @@
-
 <script setup>
 import { ref, reactive } from 'vue';
 import { changeUserStore } from '@/stores/changeUser';
@@ -11,7 +10,7 @@ const changeRefObjectValue = store.changeRefObjectValue;
 const changeReactiveObjectValue = store.changeReactiveObjectValue;
 </script>
 <template>
-    <h1 style="margin-bottom: 30px">페이지</h1>
+    <h1 style="margin-bottom: 30px">게시판 페이지</h1>
     <div>
         {{ refPrimitive }}
         <input type="button" value="변경" @click="changeRefPrimitive"></input>
