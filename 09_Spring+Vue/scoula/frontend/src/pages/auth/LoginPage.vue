@@ -1,7 +1,8 @@
 <script setup>
 import { computed, reactive, ref } from 'vue';
 import { useAuthStore } from '@/stores/auth';
-import { useRouter } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
+const cr = useRoute();
 const router = useRouter();
 const auth = useAuthStore();
 const member = reactive({

@@ -1,3 +1,4 @@
+
 package org.scoula.config;
 
 import org.scoula.security.config.SecurityConfig;
