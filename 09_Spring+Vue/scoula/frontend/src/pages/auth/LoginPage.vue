@@ -14,7 +14,13 @@ const login = async () => {
     console.log(member);
     try {
         await auth.login(member);
-        router.push('/');
+        if (cr.query.next) {
+            // 로그인 후 이동할 페이지가 있는 경우
+            router.push({ name: cr.query.next });
+        } else {
+            // 일반 로그인
+            router.push('/');
+        }
     } catch (e) {
         // 로그인 에러
         console.log('에러=======', e);

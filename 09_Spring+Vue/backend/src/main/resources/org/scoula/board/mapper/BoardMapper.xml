@@ -63,7 +63,6 @@
 
 
     <insert id="create">
-
         insert into tbl_board (title, content, writer)
         values (#{title}, #{content}, #{writer})
 
@@ -83,11 +82,22 @@
         where bno = #{bno}
         order by filename
     </select>
+
     <select id="getAttachment" resultType="BoardAttachmentVO">
         select *
         from tbl_board_attachment
         where no = #{no}
     </select>
+
+    <select id="getTotalCount" resultType="java.lang.Integer">
+        select count(*) from tbl_board
+    </select>
+
+    <select id="getPage" resultType="org.scoula.board.domain.BoardVO">
+        select * from tbl_board order by no desc
+        limit #{offset}, #{amount}
+    </select>
+
     <delete id="deleteAttachment">
         delete
         from tbl_board_attachment

@@ -6,6 +6,8 @@ import org.scoula.board.domain.BoardAttachmentVO;
 import org.scoula.board.dto.BoardDTO;
 import org.scoula.board.service.BoardService;
 import org.scoula.common.UploadFiles;
+import org.scoula.common.pagination.Page;
+import org.scoula.common.pagination.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,15 +23,20 @@ import java.util.NoSuchElementException;
 @Slf4j
 public class BoardController {
     private final BoardService service;
+//
+//    @GetMapping("")
+//    public ResponseEntity<List<BoardDTO>> getList() {
+//         try{
+//             return ResponseEntity.ok(service.getList());
+//         } catch (NoSuchElementException e){
+//             return ResponseEntity.status(HttpStatus.NOT_FOUND)
+//                     .body(null); // 또는 적절한 에러 메시지 설정
+//         }
+//    }
 
     @GetMapping("")
-    public ResponseEntity<List<BoardDTO>> getList() {
-         try{
-             return ResponseEntity.ok(service.getList());
-         } catch (NoSuchElementException e){
-             return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                     .body(null); // 또는 적절한 에러 메시지 설정
-         }
+    public ResponseEntity<Page> getList(PageRequest pageRequest) {
+        return ResponseEntity.ok(service.getPage(pageRequest));
     }
 
     @GetMapping("/{no}")

@@ -42,3 +42,38 @@ const load = async () => {
 };
 load();
 </script>
+<template>
+    <h1><i class="fa-regular fa-pen-to-square"></i> 글 수정</h1>
+    <form @submit.prevent="submit">
+        <div class="mb-3 mt-3">
+            <label for="title" class="form-label"> 제목 </label>
+            <input type="text" class="form-control" placeholder="제목" id="title" v-model="article.title" />
+            <div class="invalid-feedback">제목은 필수 요소입니다.</div>
+        </div>
+        <div class="mb-3 mt-3">
+            <label class="form-label"> 기존 첨부파일 </label>
+            <div v-for="file in attachments" :key="file.no" class="attach">
+                <i class="fa-solid fa-paperclip"></i> {{ file.filename }}
+                <i class="fa-solid fa-trash-can text-danger ms-2" @click="removeFile(file.no, file.filename)"></i>
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="files" class="form-label"> 첨부파일 </label>
+            <input type="file" class="form-control" placeholder="첨부파일" id="files" ref="files" multiple />
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="content" class="form-label"> 내용 </label>
+            <textarea class="form-control" placeholder="내용" id="content" v-model="article.content" rows="10"></textarea>
+        </div>
+        <div class="my-5 text-center">
+            <button type="submit" class="btn btn-primary me-3"><i class="fa-solid fa-check"></i> 확인</button>
+            <button type="button" class="btn btn-primary me-3" @click="reset"><i class="fa-solid fa-undo"></i> 취소</button>
+            <button class="btn btn-primary" @click="back"><i class="fa-solid fa-arrow-left"></i> 돌아가기</button>
+        </div>
+    </form>
+</template>
+<style>
+.fa-trash-can {
+    cursor: pointer;
+}
+</style>
